@@ -22,6 +22,7 @@ public class GithubTest {
         step(format("Авторизуемся как пользователь `%s`", USERNAME), step -> {
             step(format("Вводим логин `%s`", USERNAME));
             step(format("Вводим пароль `%s`", PASSWORD));
+            step(format("Зачекивае чек-бокс `Запомнить меня`"));
             step(format("Нажимаем кнопку %s", "Войти"));
         });
         step("Проверяем что авторизованы правильно", () -> {

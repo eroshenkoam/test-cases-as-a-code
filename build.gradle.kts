@@ -28,6 +28,11 @@ tasks.withType(Test::class) {
 }
 
 dependencies {
+    annotationProcessor("org.projectlombok:lombok:1.18.12")
+    implementation("org.projectlombok:lombok:1.18.12")
+
+    implementation("com.codepine.api:testrail-api-java-client:2.0.1")
+
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.3.0")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.3.0")
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.3.0")
